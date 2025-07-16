@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>shigga says fkoff</title>
+    <link href="https://fonts.googleapis.com/css2?family=Major+Mono+Display&display=swap" rel="stylesheet">
+    <style>
+      body {
+        font-family: 'Major Mono Display', monospace;
+        background: #0a0a0a;
+        color: #00fff7;
+        padding: 40px;
+        line-height: 1.7;
+        text-align: center;
+      }
+
+      h1 {
+        color: #ff00cc;
+        font-size: 3em;
+        animation: glitch 1.2s infinite;
+      }
+
+      @keyframes glitch {
+        0% { text-shadow: 2px 0 red; }
+        20% { text-shadow: -2px 0 blue; }
+        40% { text-shadow: 2px 2px lime; }
+        60% { text-shadow: -1px -1px yellow; }
+        80% { text-shadow: 1px 1px magenta; }
+        100% { text-shadow: 0 0 white; }
+      }
+
+      ul {
+        list-style: none;
+        padding: 0;
+        margin-top: 30px;
+      }
+
+      li {
+        margin: 10px 0;
+        font-size: 1.2em;
+      }
+
+      audio {
+        margin-top: 40px;
+        filter: drop-shadow(0 0 6px #00fff7);
+      }
+    </style>
+  </head>
+  <body>
+    <h1><span class="typewriter-text"></span></h1>
+    <p>shigga says fkoff</p>
+    <p>like fr... just fkoff</p>
+    <p>made this site for no reason</p>
+
+    <ul>
+      <li>📌 be happy cuz i exist</li>
+      <li>kys dior</li>
+      <li>buddy u jobless asf</li>
+    </ul>
+
+    <audio controls autoplay loop>
+      <source src="https://files.catbox.moe/6gq3py.mp3" type="audio/mpeg">
+      your browser is ancient bro
+    </audio>
+    <script>
+  const txt = "Hacking your lame ass in..3..2..1"; // what you want typed
+  let i = 0; // this keeps track of which letter we're on
+  const speed = 70; // time in milliseconds between each character
+
+  function typeWriter() {
+    if (i < txt.length) {
+      document.querySelector(".typewriter-text").textContent += txt.charAt(i);
+      i++;
+      setTimeout(typeWriter, speed); // schedule the next character
+    }
+  }
+
+  window.onload = typeWriter; // run it automatically when page loads
+</script>
+  </body>
+</html>
